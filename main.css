@@ -1,0 +1,370 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    color: #44545E;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Lato', sans-serif;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    z-index: 1;
+    margin: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0),rgba(255,0,0,0));
+    width: 100%;
+    justify-content: space-around;
+    padding-left:0%;
+    padding-right:0%;
+}
+
+.navigation{
+    margin: 0;
+    padding: 1em 0;
+    background-color:black;
+    opacity: 0.6;
+}
+
+.hamburguer{
+    display: none;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+.mid {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.headerimg{
+    width: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blog-body{
+    margin-top: 0%;
+    font-weight: lighter;
+    align-self: auto;
+    justify-content: space-between;
+}
+
+article{
+    height: 100vh;
+}
+
+.about{
+    height: 100vh;
+    margin: 0;
+}
+
+.first-slide{
+    background: url(./images/Desk-hd-backgrounds.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.second-slide{
+    background: url(./images/dark-desk-background.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#myCanvasContainer{
+    text-align: center; 
+}
+
+
+.portfolio{
+    padding: 15% 0;
+    background-color:grey;
+    margin: 0;
+    height: 100vh;
+    background: url(./images/carrousel.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); */ 
+}
+
+#portfolio-title{
+    text-align: center;
+    padding: 0.5em 0;
+    margin: 0 auto;
+    color: white;
+    /* background-color:black; */
+}
+
+.quotes{
+    height: 100vh;
+    background: url(./images/couch.jpg) no-repeat left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+main section{
+    width: 100%;
+    margin: 0;
+}
+
+header,footer{
+    text-align: center;
+}
+
+header h1{
+    letter-spacing: 0.5em;
+}
+
+.big{
+    width: 100%;
+    height: auto;
+}
+
+.comment-title{
+    text-align: center;
+}
+
+form{
+    align-content: center;
+    display: grid;
+    grid-template-rows:5% 100px 5%;
+    grid-template-columns: 7% 1fr 1fr 7%;
+}
+
+.name{
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+    border: 2px solid grey;
+    margin: 1% 0;
+    margin-right: 0.5%;
+}
+
+.email{
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+    border: 2px solid grey;
+    margin: 1% 0;
+    margin-left: 0.5%;
+}
+
+.message{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 2;
+    resize: none;
+    border: 2px solid grey;
+}
+
+.submit{
+    grid-row: 3 / span 2;
+    grid-column: 2 / span 2;
+    border: 2px solid grey;
+    margin: 1% 0;
+}
+
+footer{
+    width: 100%;
+    padding:5px;
+    background-image: linear-gradient(to bottom, #4e5259, #3d3d43, #2c2a2d, #1a1819, #000000);
+}
+
+footer nav ul{
+    justify-content: center;
+
+}
+
+
+.copyright{
+    border-top: 1px solid black;
+    padding-top: 2%;
+}
+
+button{
+    padding: 0.5em 1em;
+    background-color: transparent;
+    border: 2px solid grey;
+    color: grey;
+}
+
+footer div input{
+    border: none;
+
+}
+
+button:hover{
+    background-color: grey;
+    color: white;
+}
+
+ul a i{
+    padding: 10px;
+    font-size: 150%;
+}
+
+.email-footer input{
+    padding: 0.5em 4em;
+    margin: 1em;
+}
+
+.email-footer button{
+    margin: 1em;
+    padding: 0.5em 3em;
+}   
+
+/* ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid #cccccc;
+    color: #696969;
+    padding: 0.5rem;
+    text-transform: lowercase;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.cards__item {
+    display: flex;
+    padding: 0.5rem;
+    width: 25%;
+}
+
+@media only screen and (max-width: 775px) {
+    .portfolio{
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .portfolio{
+        height: 100vh;
+    }
+    .cards__item {
+        width: 50%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card:hover .card__image {
+    -webkit-filter: contrast(100%);
+            filter: contrast(100%);
+}
+
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    -webkit-filter: contrast(70%);
+            filter: contrast(70%);
+    overflow: hidden;
+    position: relative;
+    transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+.card__image::before {
+    content: "";
+    display: block;
+    padding-top: 0%;
+}
+
+@media only screen and (min-width: 40rem) {
+    .card__image::before {
+        padding-top: 66.6%;
+    }
+}
+
+.card__image--flowers {
+    background-image: url(https://unsplash.it/800/600?image=82);
+}
+
+.card__image--river {
+    background-image: url(https://unsplash.it/800/600?image=11);
+}
+
+.card__image--record {
+    background-image: url(https://unsplash.it/800/600?image=39);
+}
+
+.card__image--fence {
+    background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+.card__title {
+    color: #696969;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card__text {
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
