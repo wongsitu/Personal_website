@@ -89,12 +89,103 @@ article{
     background-size: cover;
 }
 
+
 .second-slide{
-    background: url(./images/dark-desk-background.jpg) no-repeat center center;
+    background: url(./images/desk-slide-2.jpg) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.third-slide{
+    background: url(./images/coffee.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.profile{
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 35%;
+    height: auto;
+    border: 3px solid white;
+    margin-bottom: 1em;
+}
+
+.resume{
+    display:grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows:1fr 1fr 1fr;
+    border-bottom: 2px solid silver;
+    border-top: 2px solid silver;
+    margin: auto;
+}
+
+#information{
+    padding-top:2em;
+    padding-bottom:2em;
+    text-align: center;
+}
+
+#per{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#lap{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#ed{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+#personal{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#laptop{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#education{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.wrapper{
+    height: 100vh;
+    padding-top:60px;
+    margin-left: 10%;
+    margin-right: 40%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.horizontal{
+    display: flex;
+}
+
+.resume i{
+    padding: 10%;
+    margin: auto;
+    font-size: 5em;
+    color: gainsboro;
+    text-align: center;
+}
+
+.resume p{
+    margin: auto;
+    padding: 0.5em;
 }
 
 #myCanvasContainer{
@@ -207,6 +298,7 @@ footer nav ul{
 .copyright{
     border-top: 1px solid black;
     padding-top: 2%;
+    color: white;
 }
 
 button{
