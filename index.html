@@ -13,6 +13,7 @@
     <script type="text/javascript">
         window.onload = function() {
             try {
+                TagCanvas.textFont = "'Raleway', sans-serif"
                 TagCanvas.reverse = true;
                 TagCanvas.zoomMin = 1.0;
                 TagCanvas.zoomMax = 1.0;
@@ -51,6 +52,8 @@
             <img src="./images/header-photo.jpeg" class="headerimg">
             <div class="centered">
                 <h1>MY WEBSITE</h1>
+                <p>Got a great idea for an app?</p>
+                <p>Let's Build it together!</p>
             </div>
         </div>
     </header>
@@ -58,7 +61,7 @@
         <section class="about" id="about">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active first-slide">
+                        <div class="carousel-item first-slide">
                             <article>
                                 <h1 style="text-align: center;color:white; padding-top:3em;">TECHNOLOGIES</h1>
                                 <div id="myCanvasContainer">
@@ -115,10 +118,11 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="carousel-item second-slide">
+                        <div class="carousel-item active second-slide">
                             <article class="wrapper">
                                 <h1 style="text-align: center">Wai Ka Wong</h1>
-                                <img src="./images/meanwhileprofile.jpg" alt="" class="profile">
+                                <img src="./images/profile-picture.png" alt="" class="profile">
+                                <p style="text-align: center">Full Stack Web Developer</p>
                                 <div class="resume">    
                                     <i class="fa fa-address-card" aria-hidden="true" id="per"></i>
                                     <p id="personal">
@@ -168,7 +172,7 @@
                     
         </section>
         <section class="portfolio" id="portfolio">
-            <h1 id="portfolio-title">PORTFOLIO</h1>
+            <h1 id="portfolio-title"><span>PORTFOLIO</span></h1>
             <ul class="cards">
                 <li class="cards__item">
                 <div class="card">

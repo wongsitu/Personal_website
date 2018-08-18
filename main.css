@@ -4,14 +4,6 @@ body{
     color: #44545E;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    font-family: 'Lato', sans-serif;
-}
-
-p{
-    font-family: 'Lato', sans-serif;
-}
-
 header nav ul{
     display: flex;
     flex-direction: row;
@@ -63,6 +55,17 @@ nav ul a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+}
+
+.centered h1{
+    background-color: black;
+    opacity: 0.6;
+}
+
+.centered p{
+    background-color: black;
+    opacity: 0.6;
 }
 
 .blog-body{
@@ -110,9 +113,9 @@ article{
     display: block;
     margin: 0 auto;
     border-radius: 100%;
-    width: 35%;
+    width: 30%;
     height: auto;
-    border: 3px solid white;
+    border: 3px solid gainsboro;
     margin-bottom: 1em;
 }
 
@@ -120,8 +123,8 @@ article{
     display:grid;
     grid-template-columns: 2fr 8fr;
     grid-template-rows:1fr 1fr 1fr;
-    border-bottom: 2px solid silver;
-    border-top: 2px solid silver;
+    border-bottom: 3px solid silver;
+    border-top: 3px solid silver;
     margin: auto;
 }
 
@@ -163,7 +166,7 @@ article{
 
 .wrapper{
     height: 100vh;
-    padding-top:60px;
+    padding-top: 80px;
     margin-left: 10%;
     margin-right: 40%;
     color: white;
@@ -176,16 +179,16 @@ article{
 }
 
 .resume i{
-    padding: 10%;
     margin: auto;
-    font-size: 5em;
-    color: gainsboro;
+    padding: 0.2em;
+    font-size: 4em;
+    color: silver;
     text-align: center;
 }
 
 .resume p{
     margin: auto;
-    padding: 0.5em;
+    padding: 0.2em;
 }
 
 #myCanvasContainer{
@@ -207,12 +210,17 @@ article{
     filter: grayscale(100%); */ 
 }
 
+h1 span{
+    background-color: black;
+    padding: 0.2em;
+    opacity: 0.6;
+}
+
 #portfolio-title{
     text-align: center;
     padding: 0.5em 0;
     margin: 0 auto;
     color: white;
-    /* background-color:black; */
 }
 
 .quotes{
@@ -286,7 +294,9 @@ form{
 footer{
     width: 100%;
     padding:5px;
-    background-image: linear-gradient(to bottom, #4e5259, #3d3d43, #2c2a2d, #1a1819, #000000);
+    background-color: black;
+    opacity: 0.7;
+    /* background-image: linear-gradient(to bottom, #4e5259, #3d3d43, #2c2a2d, #1a1819, #000000); */
 }
 
 footer nav ul{
@@ -366,19 +376,21 @@ ul a i{
     width: 25%;
 }
 
-@media only screen and (max-width: 775px) {
+/* @media only screen and (max-width: 775px) {
     .portfolio{
         height: 100vh;
     }
-}
+} */
 
-@media only screen and (max-width: 475px) {
+@media only screen and (min-width: 775px) and (max-width : 1024px) {
     .portfolio{
-        height: 100vh;
+        height: 130vh;
     }
     .cards__item {
         width: 50%;
+        padding: 1rem;
     }
+    
 }
 
 .card {
@@ -425,7 +437,7 @@ ul a i{
 
 @media only screen and (min-width: 40rem) {
     .card__image::before {
-        padding-top: 66.6%;
+        padding-top: 66.66%;
     }
 }
 
