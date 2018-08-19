@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1024px){
+    .profile{
+        width: 15%;
+    }
+    .wrapper{
+        margin: 0 20%;
+        overflow: auto;
+    }
+
+    #information{
+        padding-top: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 775px){
+
+    .about{
+        height: 100vh;
+    }
+
+    .wrapper{
+        padding-top: 7em;
+    }
+
+    .table{
+        height: 100vh;
+    }
+
+    #technology{
+        padding-bottom: 2em; 
+    }
+
+
+    .first-slide{
+        height: 100vh;
+    }
+
+    .portfolio{
+        height: 130vh;
+    }
+
+    .cards__item {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .profile{
+        width: 30%;
+    }
+
+    .wrapper{
+        margin: 0 20%;
+        overflow: auto;
+        height: 100vh;
+    }
+
+    .cards__item {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .portfolio{
+        height: 120vh
+    }
+
+    .table{
+        grid-template-rows: 50vh 50vh;
+    }
+
+    #information{
+        padding-top: 30px;
+    }
+}

@@ -1,4 +1,15 @@
+
 $(document).ready(function(){
+
+    $(function(){
+        var images = ['#imgone', '#imgtwo', '#imgthree', '#imgfour','#imgfive'],
+            imgIx = 0;
+    
+        (function nextImage(){
+            $(images[imgIx++] || images[imgIx = 0, imgIx++]).attr({width:"100%",height:"100%"}).fadeIn().delay(3500).fadeOut(nextImage);
+        })();
+    });
+
     $('nav ul a')
 		.on('click', function(e) {
         // prevent the standard link operation on click
@@ -24,4 +35,7 @@ $(document).ready(function(){
         // TagCanvas failed to load
         $('#myCanvasContainer').hide();
     }
+
 });
+
+

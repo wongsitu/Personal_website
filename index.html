@@ -33,6 +33,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="./ipad.css" type="text/css" />
+
     <script src="./app.js"></script>
 </head>
 <body>
@@ -53,7 +56,7 @@
             <div class="centered">
                 <h1>MY WEBSITE</h1>
                 <p>Got a great idea for an app?</p>
-                <p>Let's Build it together!</p>
+                <p>Let's build it together!</p>
             </div>
         </div>
     </header>
@@ -63,7 +66,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item first-slide">
                             <article>
-                                <h1 style="text-align: center;color:white; padding-top:3em;">TECHNOLOGIES</h1>
+                                <h1 style="text-align: center;color:white; padding-top:3em;" id="technology">TECHNOLOGIES</h1>
                                 <div id="myCanvasContainer">
                                     <canvas width="500" height="500" id="myCanvas">
                                         <ul>
@@ -154,9 +157,21 @@
                             </article>
                         </div>
                         <div class="carousel-item third-slide">
-                            <article>
-                                <h1>sdc</h1>
-                            </article>
+                            <div class="table">
+                                <div class="I-row">
+                                    <h1><span>Great ideas start on a piece of paper...</span></h1>
+                                </div>
+                                <div class="I-col">
+                                    <img src="./images/coffee-meme.jpg" style="display: none" id="imgone">
+                                    <img src="./images/coffe-meme2.jpg" style="display: none" id="imgtwo">
+                                    <img src="./images/coffee-meme3.png" style="display: none" id="imgthree">
+                                    <img src="./images/coffe-meme4.png" style="display: none" id="imgfour">
+                                    <img src="./images/coffee-meme5.jpg" style="display: none" id="imgfive">
+                                </div>
+                                <div class="II-col">
+                                    <h1 style="color:white"><span>...but the best days start with a cup of coffee</span></h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -179,8 +194,8 @@
                     <div class="card__image card__image--fence"></div>
                     <div class="card__content">
                     <div class="card__title">Monument Website</div>
-                    <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-                    <button class="btn btn--block card__btn">Button</button>
+                    <p class="card__text">A very cool looking website, a lifestyle blog, built using HTML and CSS</p>
+                    <button class="btn btn--block card__btn">Visit website</button>
                     </div>
                 </div>
                 </li>
@@ -189,8 +204,8 @@
                     <div class="card__image card__image--river"></div>
                     <div class="card__content">
                     <div class="card__title">Blog App</div>
-                    <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-                    <button class="btn btn--block card__btn">Button</button>
+                    <p class="card__text">This is a medium-term project. A blog application built using Ruby on Rails. It includes features such as the use of gravatars, user authentication, the manupulation of articles and users using CRUD actions and more.</p>
+                    <button class="btn btn--block card__btn">Visit website</button>
                     </div>
                 </div>
                 </li>
@@ -199,8 +214,8 @@
                     <div class="card__image card__image--record"></div>
                     <div class="card__content">
                     <div class="card__title">Shopping Cart</div>
-                    <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
-                    <button class="btn btn--block card__btn">Button</button>
+                    <p class="card__text">A simple and small app built using Javascript, HTML and CSS. Allows the user to select market products and add it to their shopping list</p>
+                    <button class="btn btn--block card__btn">Visit website</button>
                     </div>
                 </div>
                 </li>
@@ -210,7 +225,7 @@
                     <div class="card__content">
                     <div class="card__title">Earthquake Tracker</div>
                     <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
-                    <button class="btn btn--block card__btn">Button</button>
+                    <button class="btn btn--block card__btn">Visit website</button>
                     </div>
                 </div>
                 </li>
@@ -250,6 +265,3 @@
     </footer>
 </body>
 </html>          
-
-
-<!-- ./images/header-photo.jpeg -->
