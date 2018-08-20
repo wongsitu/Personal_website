@@ -15,6 +15,17 @@ $(document).ready(function(){
 
 //--------------------------------------------
 
+$(function(){
+    var images = ['#t1', '#t2'],
+        imgIx = 0;
+
+    (function nextImage(){
+        $(images[imgIx++] || images[imgIx = 0, imgIx++]).attr({width:"100%",height:"100%"}).fadeIn().delay(6000).fadeOut(nextImage);
+    })();
+});
+
+//--------------------------------------------
+
     $('nav ul a').on('click', function(e) {
         // prevent the standard link operation on click
         e.preventDefault();
@@ -45,6 +56,10 @@ $(document).ready(function(){
             }
         });
     }
+
+// -------------------------------------------
+
+
 //--------------------------------------------
     
     if( ! $('#myCanvas').tagcanvas({

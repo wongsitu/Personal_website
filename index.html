@@ -45,17 +45,20 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="navigation" id="mainNav">
-                <li><h5><a href="#about" class="active">ABOUT</a></h5></li>
-                <li><h5><a href="#portfolio">PORTFOLIO</a></h5></li></a>
-                <li><h5><a href="#quotes">QUOTES</a></h5></li></a>
-                <li><h5><a href="#contact">CONTACT</a></h5></li></a>
-                <a href="#" class="icon"><li><i class="fa fa-bars"></i></li></a>
-            </ul>
-        </nav>
-        <nav class="hamburguer">
-            <i class="fas fa-bars"></i>
+        <nav id="navigation">
+            <nav class="navbar navbar-expand-sm navbar-light" style="padding-left:0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto" id="mainNav">
+                        <li><h5><a href="#about" class="active">ABOUT</a></h5></li>
+                        <li><h5><a href="#portfolio">PORTFOLIO</a></h5></li>
+                        <li><h5><a href="#quotes">QUOTES</a></h5></li>
+                        <li><h5><a href="#contact">CONTACT</a></h5></li>
+                    </ul>
+                </div>
+            </nav>
         </nav>
         <div class="mid">
             <img src="./images/header-photo.jpeg" class="headerimg">
@@ -135,28 +138,31 @@
                                 <div class="resume">    
                                     <i class="fa fa-address-card" aria-hidden="true" id="per"></i>
                                     <p id="personal">
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                        Cumque veniam labore voluptatibus voluptates explicabo! 
-                                        Natus perferendis alias, dolore architecto nesciunt qui 
+                                        A very perseverant individual, with a 
+                                        strong desire to learn, seeking to obtain a full time 
+                                        position in tech industry where I can 
+                                        utilize my physics/math background as well as web development skills for 
+                                        problem solving.
                                     
                                     </p>
                                     <i class="fa fa-laptop" aria-hidden="true" id="lap"></i>
                                     <p id="laptop">
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                        Ex ipsa, esse dolores sapiente, dignissimos dolorum dolor
+                                        Programming passionate, always open to new ideas and ready 
+                                        to build new apps. I'm also a big fan of e-sports as well as gaming in general.
                                         
                                     </p>
                                     <i class="fa fa-university" aria-hidden="true" id="ed"></i>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Et ea officiis nostrum reprehenderit dolor architecto quo,
+                                    <p id="education">
+                                        General Assembly (2018) <br/>
+                                        Kansas State University (2014-2017) <br/>
+                                        Pontificia Universidad Catolica del Peru (2013-2014)
                                     </p>
                                     
                                 </div>
                                 <div id="information">
                                         <h2>Contact me</h2>
                                         <p><i class="fa fa-envelope-open" aria-hidden="true"></i> wongsitu@ksu.edu</p>
-                                        <p><i class="fa fa-phone-square" aria-hidden="true"></i> 123123123</p>
+                                        <p><i class="fa fa-phone-square" aria-hidden="true"></i> (415) 699-4491</p>
                                         <p><a href="https://github.com/wongsitu"><i class="fab fa-github" aria-hidden="true"></i> www.github.com/wongsitu</a></p>
                                         <p><a href="https://www.linkedin.com/in/waika-wong/"><i class="fab fa-linkedin"></i> www.linkedin.com</a></p>
                                     </div>
@@ -168,11 +174,11 @@
                                     <h1><span>Great ideas start on a piece of paper...</span></h1>
                                 </div>
                                 <div class="I-col">
-                                    <img src="./images/coffee-meme.jpg" style="display: none" id="imgone">
-                                    <img src="./images/coffe-meme2.jpg" style="display: none" id="imgtwo">
-                                    <img src="./images/coffee-meme3.png" style="display: none" id="imgthree">
-                                    <img src="./images/coffe-meme4.png" style="display: none" id="imgfour">
-                                    <img src="./images/coffee-meme5.jpg" style="display: none" id="imgfive">
+                                    <img src="./images/coffee-meme.jpg" id="imgone">
+                                    <img src="./images/coffe-meme2.jpg" id="imgtwo">
+                                    <img src="./images/coffee-meme3.png" id="imgthree">
+                                    <img src="./images/coffe-meme4.png" id="imgfour">
+                                    <img src="./images/coffee-meme5.jpg"  id="imgfive">
                                 </div>
                                 <div class="II-col">
                                     <h1 style="color:white"><span>...but the best days start with a cup of coffee</span></h1>
@@ -240,6 +246,15 @@
         </section>
         <section class="quotes" id="quotes">
             <h1>TESTIMONIALS</h1>
+            <p id="t1">
+                "Wai Ka is an incredibly talented and creative programmer. 
+                He is an effective problem solver - especially if he'
+                s had his coffee - and a fantastic teammate. It has been 
+                a pleasure working with him." - Alan Duncan
+            </p>
+            <p id="t2">
+                "I need more testimonials" - Wai Ka Wong
+            </p>
         </section>
         <section class="contact" id="contact">
             <div class="comment-title">

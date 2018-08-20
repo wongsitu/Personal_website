@@ -17,11 +17,23 @@ header nav ul{
     padding-right:0%;
 }
 
-.navigation{
-    margin: 0;
-    padding: 1em 0;
-    background-color:black;
+header nav{
+    padding:0;
+}
+
+#navigation{
+    position:fixed; 
+    z-index:10;
+    padding-top: 1.5em; 
+    padding-left: 0;
+}
+
+#mainNav{
+    background-color: black;
     opacity: 0.6;
+    padding: 1em;
+    padding-left: 0;
+    margin: 0 auto;
 }
 
 .hamburguer{
@@ -45,10 +57,6 @@ nav ul li a {
 
 nav ul .active{
     border-bottom: 2px solid white; 
-}
-
-.icon{
-    display: none;
 }
 
 .mid {
@@ -143,6 +151,10 @@ article{
     height: 100%;
     grid-column: 1 / span 1;
     grid-row: 2 / span 1;
+}
+
+.I-col img{
+    display: none;
 }
 
 .II-col{
@@ -260,7 +272,7 @@ article{
     padding: 80px 0;
     background-color:grey;
     margin: 0;
-    height: 100vh;
+    height: 85vh;
     background: url(./images/carrousel.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -291,6 +303,11 @@ h1 span{
 .quotes h1{
     text-align: center;
     padding: 2em;
+}
+
+.quotes p{
+    margin: 0 3em;
+    display: none;
 }
 
 main section{
@@ -449,19 +466,6 @@ box-sizing: border-box;
 
 @media only screen and (max-width: 775px){
 
-    .about{
-        height: 100vh;
-    }
-
-    .table{
-        height: 100vh;
-    }
-
-
-    .first-slide{
-        height: 100vh;
-    }
-
     .portfolio{
         height: 100vh;
     }
@@ -499,26 +503,11 @@ box-sizing: border-box;
     }
 }
 
-/* @media only screen and (max-width: 775px){
-
+@media only screen and (max-width: 750px){
     .wrapper{
-        margin: 0%;
-        overflow: auto;
+        margin: 0 0;
     }
-
-    .cards__item {
-        width: 50%;
-        padding: 1rem;
-    }
-
-    .portfolio{
-        height: 120vh
-    }
-
-    .table{
-        grid-template-rows: 50vh 50vh;
-    }
-} */
+}
 
 .card {
     background-color: white;

@@ -14,7 +14,6 @@
     padding-bottom: 2em; 
 }
 
-
 .first-slide{
     height: 100vh;
 }
@@ -67,4 +66,8 @@
 
 #information{
     padding-top: 0;
+}
+
+h1{
+    font-size: 25px;
 }
