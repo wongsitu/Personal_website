@@ -1,5 +1,8 @@
 
 $(document).ready(function(){
+    $(document).on("scroll", onScroll);
+
+//--------------------------------------------
 
     $(function(){
         var images = ['#imgone', '#imgtwo', '#imgthree', '#imgfour','#imgfive'],
@@ -10,8 +13,9 @@ $(document).ready(function(){
         })();
     });
 
-    $('nav ul a')
-		.on('click', function(e) {
+//--------------------------------------------
+
+    $('nav ul a').on('click', function(e) {
         // prevent the standard link operation on click
         e.preventDefault();
         // use the href of the link to identify what
@@ -25,6 +29,23 @@ $(document).ready(function(){
             scrollTop: targetOffset
         }, 700);
     });
+//--------------------------------------------
+
+    function onScroll(event){
+        var scrollPos = $(document).scrollTop();
+        $('#mainNav a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('#mainNav ul li a').removeClass("active");
+                currLink.addClass("active");
+            }
+            else{
+                currLink.removeClass("active");
+            }
+        });
+    }
+//--------------------------------------------
     
     if( ! $('#myCanvas').tagcanvas({
         textColour : '#ffffff',

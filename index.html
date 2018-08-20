@@ -29,23 +29,29 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
+    <!-- Identifies iPad link tag -->
     <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="./ipad.css" type="text/css" />
+    <!-- Identifies iPhone & iPod-->
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="../iphone.css" type="text/css" />
 
-    <script src="./app.js"></script>
+    <script src="./app.js"></script> 
 </head>
 <body>
     <header>
         <nav>
-            <ul class="navigation">
-                <a href="#about"><li><h5>ABOUT</h5></li></a>
-                <a href="#portfolio"><li><h5>PORTFOLIO</h5></li></a>
-                <a href="#quotes"><li><h5>QUOTES</h5></li></a>
-                <a href="#contact"><li><h5>CONTACT</h5></li></a>
+            <ul class="navigation" id="mainNav">
+                <li><h5><a href="#about" class="active">ABOUT</a></h5></li>
+                <li><h5><a href="#portfolio">PORTFOLIO</a></h5></li></a>
+                <li><h5><a href="#quotes">QUOTES</a></h5></li></a>
+                <li><h5><a href="#contact">CONTACT</a></h5></li></a>
+                <a href="#" class="icon"><li><i class="fa fa-bars"></i></li></a>
             </ul>
         </nav>
         <nav class="hamburguer">
@@ -66,7 +72,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item first-slide">
                             <article>
-                                <h1 style="text-align: center;color:white; padding-top:3em;" id="technology">TECHNOLOGIES</h1>
+                                <h1 style="text-align: center;color:white; padding-top:3em;" id="technology"><span>TECHNOLOGIES</span></h1>
                                 <div id="myCanvasContainer">
                                     <canvas width="500" height="500" id="myCanvas">
                                         <ul>
@@ -151,8 +157,8 @@
                                         <h2>Contact me</h2>
                                         <p><i class="fa fa-envelope-open" aria-hidden="true"></i> wongsitu@ksu.edu</p>
                                         <p><i class="fa fa-phone-square" aria-hidden="true"></i> 123123123</p>
-                                        <p><i class="fab fa-github" aria-hidden="true"></i> www.github.com/wongsitu</p>
-                                        <p><i class="fab fa-linkedin"></i> www.linkedin.com</p>
+                                        <p><a href="https://github.com/wongsitu"><i class="fab fa-github" aria-hidden="true"></i> www.github.com/wongsitu</a></p>
+                                        <p><a href="https://www.linkedin.com/in/waika-wong/"><i class="fab fa-linkedin"></i> www.linkedin.com</a></p>
                                     </div>
                             </article>
                         </div>
@@ -224,7 +230,7 @@
                     <div class="card__image card__image--flowers"></div>
                     <div class="card__content">
                     <div class="card__title">Earthquake Tracker</div>
-                    <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
+                    <p class="card__text">This is a project that displays all recent earthquakes around the world. It uses Google and USGS earthquake APIs</p>
                     <button class="btn btn--block card__btn">Visit website</button>
                     </div>
                 </div>
@@ -233,17 +239,18 @@
 
         </section>
         <section class="quotes" id="quotes">
-                
+            <h1>TESTIMONIALS</h1>
         </section>
         <section class="contact" id="contact">
             <div class="comment-title">
-                <h3>CONTACT</h3>
+                <h1><span style="color:white">CONTACT</span></h1>
             </div>
             <form>
-                <input class="name" type="text" name="name" placeholder="NAME">
-                <input class="email" type="text" name="email" placeholder="EMAIL ADDRESS">
-                <textarea class="message" name="message" placeholder="MESSAGE"></textarea>
-                <input class="submit" type="submit" value="SUBMIT">
+                <input class="name" type="text" name="name" placeholder="Name">
+                <input class="email" type="text" name="email" placeholder="Email address">
+                <input class="phone" type="number" name="phone" placeholder="Phone number">
+                <textarea class="message" name="message" placeholder="Message" rows="5"></textarea>
+                <input class="submit" type="submit" value="Submit">
             </form>
         </section>  
     </main>
@@ -257,7 +264,7 @@
         </nav>
         <div class="email-footer">
             <input type="email" placeholder="EMAIL ADDRESS">
-            <button>KEEP IN TOUCH</button>
+            <button>Subscribe</button>
         </div>
         <p class="copyright">
             © 2016 All rights reserved Wai Ka Wong
